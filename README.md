@@ -21,6 +21,7 @@ This is a collection of Python utilities that I use in my projects.
   - [Utilities](#utilities)
     - [Folder parser to CSV/JSON](#folder-parser-to-csvjson)
     - [WebScrapper - Portal da Transparência TJPR](#webscrapper---portal-da-transparência-tjpr)
+    - [Consolidate email addresses in CSV files](#consolidate-email-addresses-in-csv-files)
     - [[LEGACY] Extract Contacts from WhatsApp Group](#legacy-extract-contacts-from-whatsapp-group)
 
 ## Installation
@@ -205,6 +206,32 @@ At the end, you will have a CSV with all the data, and you can view them in a ta
 - [ ] Extract data from judicial notaries
 - [ ] Extract data from employees
 - [ ] Extract revenues and expenses data of the Court
+
+### Consolidate email addresses in CSV files
+
+Script: [**`consolidate_email_addresses.py`**](consolidate_email_addresses.py)
+
+- Description
+
+This script finds and consolidates all unique email addresses found in CSV files, ensuring to remove duplicates and sorting them.
+
+It's useful when you have a lot of CSV files with email addresses and you want to consolidate them in a single CSV file.
+
+This situation might happen when you export all your contacts from your email client (such as Outlook).
+
+- Usage
+
+1. To run it, change the `CSV_DIR` variable to the directory where your CSV files filled with email addresses are located.
+
+    ```python
+    CSV_DIR = 'path/to/csv/files'
+    ```
+
+2. Then, just run the `consolidate_email_addresses.py` in your terminal.
+
+    ```bash
+    python consolidate_email_addresses.py
+    ```
 
 ### [LEGACY] Extract Contacts from WhatsApp Group
 
