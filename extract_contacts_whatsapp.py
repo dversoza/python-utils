@@ -1,3 +1,13 @@
+""" This is a legacy module for extracting contacts from a WhatsApp group conversation.
+    It is not used anymore, but it is kept for reference.
+
+    Attributes:
+        __author__ = "Daniel Versoza Alves"
+        __email__ = "daniel@versoza.dev"
+        __version__ = "1.0.0"
+        __status__ = "Deprecated"
+        __date__ = "2021/07/11"
+"""
 import os
 
 from selenium import webdriver
