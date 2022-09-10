@@ -21,6 +21,7 @@ This is a collection of Python utilities that I use in my projects.
   - [Utilities](#utilities)
     - [Folder parser to CSV/JSON](#folder-parser-to-csvjson)
     - [WebScrapper - Portal da Transparência TJPR](#webscrapper---portal-da-transparência-tjpr)
+    - [[LEGACY] Extract Contacts from WhatsApp Group](#legacy-extract-contacts-from-whatsapp-group)
 
 ## Installation
 
@@ -162,7 +163,7 @@ This script simply extracts data from Paraná's Court of Justice and returns sim
 
 > Transparência: verdadeira e simplificada
 
-- Atualmente extraí apenas dados de resultados financeiros das Serventias Extrajudiciais do TJPR
+- Currently, it only extracts financial results data from Extrajudicial Agencies of TJPR
 
 ---
 
@@ -201,6 +202,29 @@ At the end, you will have a CSV with all the data, and you can view them in a ta
 
 - TODO
 
-- [ ] Adicionar opção para extrair dados de serventias judiciais
-- [ ] Adicionar opção para extrair dados de servidores
-- [ ] Adicionar opção para extrair dados de receitas e despesas do tribunal
+- [ ] Extract data from judicial notaries
+- [ ] Extract data from employees
+- [ ] Extract revenues and expenses data of the Court
+
+### [LEGACY] Extract Contacts from WhatsApp Group
+
+Script: [**`extract_contacts_whatsapp.py`**](extract_contacts_whatsapp.py)
+
+This is a really old script that I wrote to extract the contacts from a WhatsApp group. It was written it uses the `selenium` library to simulate a browser and extract the contacts.
+
+> **NOTE:** This script is not working anymore, because WhatsApp changed the way to access the group's contacts.
+
+- Usage:
+
+1. Change the `CHAT_NAME` constant to the name of the chat you want to extract the contacts from:
+
+    ```python
+    # Change the name of the chat here
+    CHAT_NAME = "<chat name>"
+    ```
+
+2. Run the script:
+
+    ```bash
+    python extract_contacts_whatsapp.py
+    ```
